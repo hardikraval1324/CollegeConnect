@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.event.UpcomingEvents">
+    tools:context=".ui.event.UpcomingEvents"
+    android:background="@color/blackToWhite">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -41,10 +42,10 @@
     </RelativeLayout>
 
     <FrameLayout
-        android:layout_width="match_parent"
         android:id="@+id/frameupcomingevents"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/upcoming_header"/>
+        android:layout_below="@id/upcoming_header" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/createEvent"

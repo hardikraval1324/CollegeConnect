@@ -99,7 +99,7 @@ public class TimeTable extends AppCompatActivity {
                 image = res.getBlob(1);
                 bit = getImage(image);
                 imageView.setImageBitmap(bit);
-                imageView.setRotateImageToFitScreen(true);
+//                imageView.setRotateImageToFitScreen(true);
 //                imageView.setImageBitmap(bit);
 //                imageView.setMaxZoom(3);
             }
@@ -240,7 +240,7 @@ public class TimeTable extends AppCompatActivity {
                 else
                     bitmap = ImageDecoder.decodeBitmap(ImageDecoder.createSource(getContentResolver(), filePath));
                 imageView.setImageBitmap(bitmap);
-                imageView.setRotateImageToFitScreen(true);
+//                imageView.setRotateImageToFitScreen(true);
 //                UploadImage();
                 byte[] image1 = getBytes(bitmap);
                 boolean insert = db.insertImage(image1);

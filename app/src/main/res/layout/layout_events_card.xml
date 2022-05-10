@@ -19,9 +19,9 @@
 
             <ImageView
                 android:id="@+id/imageView15"
-                android:layout_centerVertical="true"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:layout_centerVertical="true"
                 android:paddingLeft="5dp"
                 app:srcCompat="@drawable/cc2" />
             <RelativeLayout
