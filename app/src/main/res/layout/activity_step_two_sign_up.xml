@@ -24,8 +24,8 @@
         tools:visibility="visible">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="199dp"
-            android:layout_height="55dp"
+            android:layout_width="170dp"
+            android:layout_height="54dp"
             android:ems="15"
             android:hint="College Name"
             android:inputType="textCapCharacters"
@@ -50,8 +50,8 @@
         tools:visibility="visible">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="210dp"
-            android:layout_height="53dp"
+            android:layout_width="170dp"
+            android:layout_height="59dp"
             android:ems="15"
             android:hint="Academic Year"
             android:inputType="numberSigned"
@@ -74,8 +74,8 @@
         app:layout_constraintStart_toStartOf="@+id/guideline5">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="190dp"
-            android:layout_height="53dp"
+            android:layout_width="179dp"
+            android:layout_height="58dp"
             android:ems="15"
             android:hint="Branch"
             android:inputType="textCapCharacters"
@@ -167,7 +167,7 @@
         android:id="@+id/select_college"
         android:layout_width="160dp"
         android:layout_height="53dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:text="Select College"
         android:textColor="@color/latestBlue"
         android:textSize="24sp"
@@ -177,14 +177,14 @@
 
     <Spinner
         android:id="@+id/collegeSpinner"
-        android:layout_width="170dp"
-        android:layout_height="41dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="157dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/spinner_layout"
         android:paddingEnd="20dp"
         app:layout_constraintBottom_toTopOf="@+id/otherCollege"
         app:layout_constraintEnd_toEndOf="@id/textbranch"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="@+id/textbranch" />
 
     <ImageView
