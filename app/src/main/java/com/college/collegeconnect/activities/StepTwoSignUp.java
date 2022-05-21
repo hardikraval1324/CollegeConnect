@@ -81,17 +81,16 @@ public class StepTwoSignUp extends AppCompatActivity {
         databaseReference = firebaseDatabase.getReference("Colleges");
         databaseReference.addListenerForSingleValueEvent(valueListener = new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                ArrayList<String> arrayList2 = (ArrayList<String>) dataSnapshot.getValue();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                ArrayList<String> arrayList2 = (ArrayList<String>) snapshot.getValue();
                 arrayList.addAll(arrayList2);
                 spinnerArrayAdapter.notifyDataSetChanged();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-
             }
-        });
+            });
 
         Intent intent = getIntent();
         final String receivedName = intent.getStringExtra(EXTRA_NAME);
