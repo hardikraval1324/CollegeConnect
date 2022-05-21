@@ -133,8 +133,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textpass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="255dp"
+        android:layout_height="67dp"
         android:textColorHint="@color/latestBlue"
         app:boxStrokeColor="@drawable/text_box_signup"
         app:hintTextColor="@color/latestBlue"

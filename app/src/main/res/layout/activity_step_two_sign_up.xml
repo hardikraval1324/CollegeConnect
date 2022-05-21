@@ -24,8 +24,8 @@
         tools:visibility="visible">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="226dp"
+            android:layout_height="51dp"
             android:ems="15"
             android:hint="College Name"
             android:inputType="textCapCharacters"

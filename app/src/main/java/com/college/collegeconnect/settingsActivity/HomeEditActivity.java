@@ -282,7 +282,7 @@ public class HomeEditActivity extends AppCompatActivity implements DoneListener 
                     year.setText(strYear);
                     HomeEditActivity.this.branch.setText(branch);
 
-                    assert name != null;
+//                    assert name != null;
                     int space = name.indexOf(" ");
                     int color = Navigation.generateColor();
                     drawable = TextDrawable.builder().beginConfig()
