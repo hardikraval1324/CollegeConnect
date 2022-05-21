@@ -174,11 +174,11 @@
 
     <Spinner
         android:id="@+id/collegeSpinner"
-        android:paddingEnd="20dp"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/spinner_layout"
+        android:paddingEnd="20dp"
         app:layout_constraintBottom_toTopOf="@+id/otherCollege"
         app:layout_constraintEnd_toEndOf="@id/textbranch"
         app:layout_constraintStart_toStartOf="@+id/textbranch" />
