@@ -212,5 +212,4 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline5" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
