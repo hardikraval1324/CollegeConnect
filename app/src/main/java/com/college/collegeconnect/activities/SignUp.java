@@ -96,9 +96,9 @@ public class SignUp extends AppCompatActivity {
                                                 });
                                                 Log.d(TAG, "createUserWithEmail:success");
                                                 Intent intent = new Intent(SignUp.this, MainActivity.class);
-//                                                intent.putExtra(StepTwoSignUp.EXTRA_NAME, Strname);
-//                                                intent.putExtra(StepTwoSignUp.EXTRA_EMAIL, Stremail);
-//                                                intent.putExtra(StepTwoSignUp.EXTRA_PASSWORD, Strpassword);
+                                                intent.putExtra(StepTwoSignUp.EXTRA_NAME, Strname);
+                                                intent.putExtra(StepTwoSignUp.EXTRA_EMAIL, Stremail);
+                                                intent.putExtra(StepTwoSignUp.EXTRA_PASSWORD, Strpassword);
                                                 //To indicate the user is signing up using email
 
                                                 startActivity(intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));

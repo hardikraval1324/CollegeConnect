@@ -24,8 +24,8 @@
         tools:visibility="visible">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="199dp"
+            android:layout_height="55dp"
             android:ems="15"
             android:hint="College Name"
             android:inputType="textCapCharacters"
@@ -50,8 +50,8 @@
         tools:visibility="visible">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="210dp"
+            android:layout_height="53dp"
             android:ems="15"
             android:hint="Academic Year"
             android:inputType="numberSigned"
@@ -74,8 +74,8 @@
         app:layout_constraintStart_toStartOf="@+id/guideline5">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="190dp"
+            android:layout_height="53dp"
             android:ems="15"
             android:hint="Branch"
             android:inputType="textCapCharacters"
@@ -98,8 +98,8 @@
         app:layout_constraintStart_toStartOf="@+id/guideline5">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="183dp"
+            android:layout_height="52dp"
             android:ems="15"
             android:hint="@string/rollno"
             android:inputType="number"
@@ -165,22 +165,26 @@
 
     <TextView
         android:id="@+id/select_college"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
         android:text="Select College"
         android:textColor="@color/latestBlue"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/collegeSpinner"
         app:layout_constraintStart_toStartOf="@id/collegeSpinner" />
 
     <Spinner
         android:id="@+id/collegeSpinner"
-        android:paddingEnd="20dp"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="170dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="4dp"
         android:background="@drawable/spinner_layout"
+        android:paddingEnd="20dp"
         app:layout_constraintBottom_toTopOf="@+id/otherCollege"
         app:layout_constraintEnd_toEndOf="@id/textbranch"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/textbranch" />
 
     <ImageView

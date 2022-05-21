@@ -25,12 +25,14 @@ import android.widget.TextView;
 import com.college.collegeconnect.R;
 import com.college.collegeconnect.adapters.NotesAdapter;
 import com.college.collegeconnect.datamodels.Constants;
+import com.college.collegeconnect.datamodels.Upload;
 import com.college.collegeconnect.viewmodels.DownloadNotesViewModel;
 import com.college.collegeconnect.utils.FirebaseUtil;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.Collections;
@@ -105,7 +107,7 @@ public class DownloadNotes extends AppCompatActivity {
             notesAdapter = new NotesAdapter(DownloadNotes.this, uploadList, downloadNotesViewModel);
             recyclerView.setAdapter(notesAdapter);
         });
-        swiperefreshlayout.setRefreshing(false);
+//        swiperefreshlayout.setRefreshing(false);
 //        mDatabaseReference.orderByChild("download").addValueEventListener(listener = new ValueEventListener() {
 //            @Override
 //            public void onDataChange(DataSnapshot dataSnapshot) {

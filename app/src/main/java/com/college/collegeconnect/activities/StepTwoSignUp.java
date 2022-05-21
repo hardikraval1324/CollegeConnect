@@ -69,7 +69,7 @@ public class StepTwoSignUp extends AppCompatActivity {
         contribute = findViewById(R.id.textView21);
         yearText = findViewById(R.id.year);
 
-        final ArrayList<String> arrayList = new ArrayList<>();
+        final ArrayList<String> arrayList = new ArrayList<String>();
         arrayList.add("Other");
         final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(StepTwoSignUp.this, android.R.layout.simple_spinner_item, arrayList);
         spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -81,14 +81,14 @@ public class StepTwoSignUp extends AppCompatActivity {
         databaseReference = firebaseDatabase.getReference("Colleges");
         databaseReference.addListenerForSingleValueEvent(valueListener = new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                ArrayList<String> arrayList2 = (ArrayList<String>) dataSnapshot.getValue();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                ArrayList<String> arrayList2 = (ArrayList<String>) snapshot.getValue();
                 arrayList.addAll(arrayList2);
                 spinnerArrayAdapter.notifyDataSetChanged();
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
         });
