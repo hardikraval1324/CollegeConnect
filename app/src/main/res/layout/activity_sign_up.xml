@@ -10,8 +10,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textname"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="252dp"
+        android:layout_height="59dp"
         android:textColorHint="@color/latestBlue"
         app:boxStrokeColor="@drawable/text_box_signup"
         app:hintTextColor="@color/latestBlue"
@@ -21,8 +21,8 @@
         app:layout_constraintTop_toTopOf="@+id/guideline6">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="249dp"
-            android:layout_height="41dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:ems="15"
             android:hint="Full Name"
             android:inputType="textCapWords"
@@ -42,8 +42,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textemail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="247dp"
+        android:layout_height="59dp"
         android:textColorHint="@color/latestBlue"
         app:boxStrokeColor="@drawable/text_box_signup"
         app:hintTextColor="@color/latestBlue"
@@ -53,8 +53,8 @@
         app:layout_constraintTop_toTopOf="@+id/guideline12">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="250dp"
-            android:layout_height="49dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:ems="15"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
@@ -133,8 +133,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textpass"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-        android:layout_width="242dp"
-        android:layout_height="54dp"
+        android:layout_width="255dp"
+        android:layout_height="67dp"
         android:textColorHint="@color/latestBlue"
         app:boxStrokeColor="@drawable/text_box_signup"
         app:hintTextColor="@color/latestBlue"

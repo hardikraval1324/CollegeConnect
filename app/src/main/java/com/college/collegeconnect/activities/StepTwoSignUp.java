@@ -69,7 +69,7 @@ public class StepTwoSignUp extends AppCompatActivity {
         contribute = findViewById(R.id.textView21);
         yearText = findViewById(R.id.year);
 
-        final ArrayList<String> arrayList = new ArrayList<String>();
+        final ArrayList<String> arrayList = new ArrayList<>();
         arrayList.add("Other");
         final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>(StepTwoSignUp.this, android.R.layout.simple_spinner_item, arrayList);
         spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -93,10 +93,11 @@ public class StepTwoSignUp extends AppCompatActivity {
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
-        });
+            });
 
         Intent intent = getIntent();
         final String receivedName = intent.getStringExtra(EXTRA_NAME);

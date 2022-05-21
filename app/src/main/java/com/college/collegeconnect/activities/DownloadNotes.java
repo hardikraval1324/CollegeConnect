@@ -107,7 +107,7 @@ public class DownloadNotes extends AppCompatActivity {
             notesAdapter = new NotesAdapter(DownloadNotes.this, uploadList, downloadNotesViewModel);
             recyclerView.setAdapter(notesAdapter);
         });
-//        swiperefreshlayout.setRefreshing(false);
+        swiperefreshlayout.setRefreshing(false);
 //        mDatabaseReference.orderByChild("download").addValueEventListener(listener = new ValueEventListener() {
 //            @Override
 //            public void onDataChange(DataSnapshot dataSnapshot) {

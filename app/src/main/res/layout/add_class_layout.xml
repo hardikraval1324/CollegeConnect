@@ -2,6 +2,7 @@
 
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -111,8 +112,8 @@
 
         <TextView
             android:id="@+id/textView25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="62dp"
+            android:layout_height="19dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="12dp"
             android:fontFamily="@font/nunito_regular"
@@ -124,37 +125,37 @@
 
         <TextView
             android:id="@+id/start_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
             android:fontFamily="@font/nunito_regular"
             android:text="8:00 AM"
-            android:layout_marginEnd="8dp"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/guideline41"
             app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
         <TextView
             android:id="@+id/end_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="86dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
             android:fontFamily="@font/nunito_regular"
             android:text="9:00 AM"
-            android:layout_marginStart="8dp"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="@+id/guideline41"
             app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
         <TextView
             android:id="@+id/textView27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="78dp"
+            android:layout_height="17dp"
             android:layout_marginStart="12dp"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/nunito_regular"
             android:text="End"
             android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/end_time"
             app:layout_constraintEnd_toEndOf="@+id/end_time"
+            app:layout_constraintStart_toStartOf="@+id/end_time"
             app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
 
@@ -179,8 +180,8 @@
             app:layout_constraintTop_toBottomOf="@+id/start_time">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="181dp"
-                android:layout_height="52dp"
+                android:layout_width="166dp"
+                android:layout_height="61dp"
                 android:ems="10"
                 android:hint="Room Number" />
         </com.google.android.material.textfield.TextInputLayout>

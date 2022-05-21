@@ -17,13 +17,13 @@
         android:visibility="gone" />
 
     <include
-        layout="@layout/toolbar_main"
-        android:id="@+id/toolbaredit"/>
+        android:id="@+id/toolbaredit"
+        layout="@layout/toolbar_main" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_below="@id/toolbaredit"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbaredit">
 
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -32,17 +32,17 @@
             android:layout_height="170dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            app:civ_border_color="#8A8989"
             android:background="@drawable/ic_dp_circle"
             android:padding="25dp"
+            app:civ_border_color="#8A8989"
             app:layout_constraintEnd_toStartOf="@+id/guideline20"
             app:layout_constraintStart_toStartOf="@+id/guideline20"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ProgressBar
+            android:id="@+id/progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/progress"
             app:layout_constraintBottom_toTopOf="@+id/nameFieldcopy"
             app:layout_constraintEnd_toStartOf="@+id/guideline20"
             app:layout_constraintStart_toStartOf="@+id/guideline20"
@@ -52,67 +52,63 @@
             android:id="@+id/nameFieldcopy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/textView3copy"
-            app:layout_constraintEnd_toStartOf="@+id/guideline20"
-            app:layout_constraintStart_toStartOf="@+id/guideline20"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             app:hint="Name"
-            app:inputType="normalText" />
+            app:inputType="normalText"
+            app:layout_constraintBottom_toTopOf="@+id/textView3copy"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline20" />
 
         <com.college.collegeconnect.customviews.EditTextWithEditButton
             android:id="@+id/textView3copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/textView5copy"
-            app:layout_constraintEnd_toStartOf="@+id/guideline20"
-            app:layout_constraintStart_toStartOf="@+id/guideline20"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             app:hint="ROLL NO"
             app:inputType="number"
-            />
+            app:layout_constraintBottom_toTopOf="@+id/textView5copy"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline20" />
 
         <com.college.collegeconnect.customviews.EditTextWithEditButton
             android:id="@+id/textView6copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/textView4copy"
-            app:layout_constraintEnd_toStartOf="@+id/guideline20"
-            app:layout_constraintStart_toStartOf="@+id/guideline20"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             app:hint="YEAR"
             app:inputType="number"
-            />
+            app:layout_constraintBottom_toTopOf="@+id/textView4copy"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline20" />
 
         <com.college.collegeconnect.customviews.EditTextWithEditButton
             android:id="@+id/textView5copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/textView6copy"
-            app:layout_constraintEnd_toStartOf="@+id/guideline20"
-            app:layout_constraintStart_toStartOf="@+id/guideline20"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             app:hint="COLLEGE"
-            />
+            app:layout_constraintBottom_toTopOf="@+id/textView6copy"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline20" />
 
         <com.college.collegeconnect.customviews.EditTextWithEditButton
             android:id="@+id/textView4copy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@id/guideline24"
-            app:layout_constraintEnd_toStartOf="@+id/guideline20"
-            app:layout_constraintStart_toStartOf="@+id/guideline20"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             app:hint="BRANCH"
-            />
+            app:layout_constraintBottom_toTopOf="@id/guideline24"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toStartOf="@+id/guideline20" />
 
         <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
         <!--        android:id="@+id/editDetailscopy"-->
@@ -152,7 +148,7 @@
             android:layout_height="45dp"
             android:background="@drawable/ic_update_dp"
             app:layout_constraintBottom_toBottomOf="@id/imageView3copy"
-            app:layout_constraintEnd_toEndOf="@id/imageView3copy"/>
+            app:layout_constraintEnd_toEndOf="@id/imageView3copy" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline8"

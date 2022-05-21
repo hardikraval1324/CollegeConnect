@@ -1,4 +1,4 @@
-College Connect was brought up as a vision, which aims to be a one stop shop for all the college needs irrespective of college and course.
+Unifi was brought up as a vision, which aims to be a one stop shop for all the college needs irrespective of college and course.
 
 It aims to create an all in one helpful platform for all college students.
 
@@ -6,6 +6,3 @@ The app uses Material UI for an attractive and appealing interface which attract
 
 The app contains many useful features which will help a student in their journey through college. More such features are in development.
 
-The app is now open source. The project can be found on GitHub.
-
-It's is maintained by Saksham Pruthi and Sajal Jain.

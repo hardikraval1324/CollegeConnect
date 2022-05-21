@@ -42,7 +42,7 @@ public class AboutActivity extends AppCompatActivity {
                 getResources().getConfiguration().uiMode &
                         Configuration.UI_MODE_NIGHT_MASK;
         if (nightModeFlags == Configuration.UI_MODE_NIGHT_NO)
-            imageView.setImageDrawable(getDrawable(R.drawable.cc2));
+            imageView.setImageDrawable(getDrawable(R.drawable.logo));
 
         BufferedReader reader = null;
         try {
