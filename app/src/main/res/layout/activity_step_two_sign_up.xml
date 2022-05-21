@@ -50,8 +50,8 @@
         tools:visibility="visible">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="233dp"
+            android:layout_height="54dp"
             android:ems="15"
             android:hint="Academic Year"
             android:inputType="numberSigned"
@@ -74,8 +74,8 @@
         app:layout_constraintStart_toStartOf="@+id/guideline5">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="222dp"
+            android:layout_height="53dp"
             android:ems="15"
             android:hint="Branch"
             android:inputType="textCapCharacters"
@@ -98,8 +98,8 @@
         app:layout_constraintStart_toStartOf="@+id/guideline5">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="245dp"
+            android:layout_height="46dp"
             android:ems="15"
             android:hint="@string/rollno"
             android:inputType="number"
@@ -165,17 +165,18 @@
 
     <TextView
         android:id="@+id/select_college"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="259dp"
+        android:layout_height="54dp"
         android:text="Select College"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/latestBlue"
         app:layout_constraintBottom_toTopOf="@id/collegeSpinner"
         app:layout_constraintStart_toStartOf="@id/collegeSpinner" />
 
     <Spinner
         android:id="@+id/collegeSpinner"
-        android:layout_width="84dp"
-        android:layout_height="46dp"
+        android:layout_width="207dp"
+        android:layout_height="57dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/spinner_layout"
         android:paddingEnd="20dp"
