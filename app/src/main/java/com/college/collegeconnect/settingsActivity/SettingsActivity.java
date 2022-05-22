@@ -187,7 +187,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.gitHub) {
-            String url = "https://github.com/collegeconnect/CollegeConnect";
+            String url = "https://github.com/hardikraval1324/UNI-FI/tree/chat/feature";
             CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
             builder.setToolbarColor(getColor(R.color.latestBlue));
             CustomTabsIntent customTabsIntent = builder.build();

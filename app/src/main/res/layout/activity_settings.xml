@@ -94,9 +94,9 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:layout_marginTop="10dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/orange"
-                        android:textSize="18sp" />
+                        android:textColor="@color/bottomBoundary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
             </com.google.android.material.card.MaterialCardView>
