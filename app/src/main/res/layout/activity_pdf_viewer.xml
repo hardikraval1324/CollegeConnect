@@ -10,12 +10,12 @@
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:background="@drawable/ic_toolbar"
-        android:backgroundTint="#000"
+        android:backgroundTint="#1e2f97"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,21 +23,25 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbarcomPdf"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="750dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:title=" "
             app:titleTextColor="@color/colorwhite" />
 
         <TextView
             android:id="@+id/tvtitle"
-            android:layout_margin="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="547dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="46dp"
             android:gravity="center"
-            android:layout_marginTop="16dp"
-           android:textColor="@color/colorwhite"
-            android:textSize="14sp" />
+            android:textColor="@color/colorwhite"
+            android:textSize="16sp" />
     </RelativeLayout>
 
     <com.github.barteksc.pdfviewer.PDFView

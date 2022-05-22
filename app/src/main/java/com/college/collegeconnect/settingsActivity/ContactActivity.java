@@ -66,15 +66,15 @@ public class ContactActivity extends AppCompatActivity {
         findViewById(R.id.email_contact).setOnClickListener(v -> {
             final Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            String[] recipients = {"college.connect8@gmail.com"};
+            String[] recipients = {"unifi.techteam@gmail.com"};
             intent.putExtra(Intent.EXTRA_EMAIL, recipients);
-            String mess = "Manufacturer: "+Build.MANUFACTURER + "\n"
-                    + "Brand: " + Build.BRAND + "\n"
-                    + "Model: " + Build.MODEL + "\n"
-                    + "Version Code :" + Build.DEVICE + "\n"
-                    + "Android " + Build.VERSION.RELEASE + "\n"
-                    + "Board: " + Build.BOARD + "\n"
-                    + "Incremental: " + Build.VERSION.INCREMENTAL + "\n\n";
+            String mess = "Messaged from "+Build.MANUFACTURER + " " + Build.MODEL + "\n";
+//                    + "Brand: " + Build.BRAND + "\n"
+//                    + "Model: " + Build.MODEL + "\n";
+//                    + "Version Code :" + Build.DEVICE + "\n"
+//                    + "Android " + Build.VERSION.RELEASE + "\n"
+//                    + "Board: " + Build.BOARD + "\n"
+//                    + "Incremental: " + Build.VERSION.INCREMENTAL + "\n\n";
             intent.putExtra(Intent.EXTRA_TEXT, mess);
             final PackageManager pm = getPackageManager();
             final List<ResolveInfo> matches = pm.queryIntentActivities(intent, 0);
@@ -103,7 +103,7 @@ public class ContactActivity extends AppCompatActivity {
                 String message = textView.getText().toString();
                 final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                String[] recipients = {"college.connect8@gmail.com"};
+                String[] recipients = {"unifi.techteam@gmail.com"};
                 intent.putExtra(Intent.EXTRA_EMAIL, recipients);
                 if (feedback.isChecked() && issue.isChecked())
                     intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback | Issue");
@@ -112,13 +112,15 @@ public class ContactActivity extends AppCompatActivity {
                 else if (feedback.isChecked())
                     intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
 
-                String mess = "Manufacturer: "+Build.MANUFACTURER + "\n"
-                        + "Brand: " + Build.BRAND + "\n"
-                        + "Model: " + Build.MODEL + "\n"
-                        + "Version Code :" + Build.DEVICE + "\n"
-                        + "Android " + Build.VERSION.RELEASE + "\n"
-                        + "Board: " + Build.BOARD + "\n"
-                        + "Incremental: " + Build.VERSION.INCREMENTAL + "\n\n";
+                String mess = message + "\n" + "\n"
+                        + "--------------------------" +"\n"
+                        + "Messaged from "+Build.MANUFACTURER + " " + Build.MODEL + "\n";
+//                        + "Brand: " + Build.BRAND + "\n"
+//                        + "Model: " + Build.MODEL + "\n";
+//                        + "Version Code :" + Build.DEVICE + "\n"
+//                        + "Android " + Build.VERSION.RELEASE + "\n"
+//                        + "Board: " + Build.BOARD + "\n"
+//                        + "Incremental: " + Build.VERSION.INCREMENTAL + "\n\n";
                 intent.putExtra(android.content.Intent.EXTRA_TEXT, mess);
                 final PackageManager pm = getPackageManager();
                 final List<ResolveInfo> matches = pm.queryIntentActivities(intent, 0);

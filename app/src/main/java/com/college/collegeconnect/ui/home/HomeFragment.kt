@@ -31,7 +31,6 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.sample.viewbinding.fragment.viewBinding
 import com.squareup.picasso.Picasso
-import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.io.*
 import java.text.SimpleDateFormat
@@ -39,20 +38,23 @@ import java.util.*
 
 class HomeFragment : Fragment(R.layout.fragment_home) {
     private val homeViewBinding: FragmentHomeBinding by viewBinding()
+    private val storage = FirebaseStorage.getInstance()
+    private var storageRef: StorageReference? = null
+    private var mcontext: Context? = null
     var bottomNavigationView: BottomNavigationView? = null
     var drawable: TextDrawable? = null
     lateinit var tv: TextView
-    private val storage = FirebaseStorage.getInstance()
     var uri: Uri? = null
-    private var storageRef: StorageReference? = null
-    private var mcontext: Context? = null
     lateinit var homeViewModel: HomeViewModel
-    var registered: ListenerRegistration? = null
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
-        return view
-    }
+    private var registered: ListenerRegistration? = null
 
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_home, container, false)
+    }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         if (activity != null) bottomNavigationView = requireActivity().findViewById(R.id.bottomNav)
@@ -161,7 +163,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 if (c != null) {
                     c.moveToFirst()
                     try {
-                        val fileUri = c.getString(c.getColumnIndex(DownloadManager.COLUMN_LOCAL_URI))
+                        val fileUri = c.getString(c.getColumnIndex(DownloadManager.COLUMN_LOCAL_URI).toInt())
                         uri = Uri.parse(fileUri)
                         Picasso.get().load(uri).into(homeViewBinding.imgProfile)
                         copyFile("/storage/emulated/0/Android/data/" + BuildConfig.APPLICATION_ID + "/files", "/dp.jpeg", requireContext().filesDir.absolutePath)

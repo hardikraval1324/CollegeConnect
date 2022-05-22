@@ -29,8 +29,8 @@ class PdfViewerActivity : AppCompatActivity() {
         setContentView(view)
 
         val bundle = intent.extras
-        filePath = bundle?.get("file") as String
-        if (bundle.get("timestamp") != null)
+        filePath = bundle?.get("file").toString()
+        if (bundle?.get("timestamp") != null)
             timeStamp = bundle.get("timestamp") as Long
 
         val toolbar = binding.toolbarcomPdf

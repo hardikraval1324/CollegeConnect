@@ -25,7 +25,7 @@ public class ToolsFragment extends Fragment {
     TextView tv;
     CardView roomLocator, events;
 
-    private static final String ALMA_MATER = "Bharati Vidyapeeth's College of Engineering, New Delhi";
+    private static final String ALMA_MATER = "Navrachana School Of Engineering and Technology, Vadodara";
 
     @Nullable
     @Override
